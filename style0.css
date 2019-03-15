@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('font/CoolveticaRg-Regular.eot');
+    src: url('font/CoolveticaRg-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/CoolveticaRg-Regular.woff2') format('woff2'),
+        url('font/CoolveticaRg-Regular.woff') format('woff'),
+        url('font/CoolveticaRg-Regular.ttf') format('truetype'),
+        url('font/CoolveticaRg-Regular.svg#CoolveticaRg-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+  background-image: url("img/bck_sky.jpg");
+  min-width: 1200px;
+}
+
+.navi{
+	font-family: 'Coolvetica';
+	padding-left: 20px;
+	padding-right: 20px;
+	color: white;
+	display: block;
+	margin-top: auto;
+	margin-bottom: auto;
+	transition: 0.4s;
+}
+
+header {
+	max-height: 85px;
+	min-width: 100%;
+	position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+    display: flex;
+    transition: 0.4s;
+}
+
+header:hover {
+  background-color: white;
+  color: black;
+}
+
+header:hover .navi{
+	color: black;
+}
+
+header:hover #logo{
+	background-image: url('img/ex2.png');
+}
+
+
+#logo {
+  margin-left: 30px;
+	min-width: 169px;
+	min-height: 85px;
+	margin-right: 20px;
+	background-image: url('img/ex.png');
+	transition: 0.4s;
+}
+
+#logo:hover {
+  transform: scale(1.5);
+}
+
+.navi:hover {
+	border:4px solid #00a3ff;
+}
+
+a {
+	margin-top: auto;
+	margin-bottom: auto;
+	text-decoration: none;
+}
+
+.web {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  margin-top: 85px;
+  width: 70%;
+  height: 500px;
+  background-color: white;
+  box-shadow: 5px 5px 5px 0px #000000;
+
+}
+
+.inputdiv {
+
+  border-right:2px solid #cecece;
+  width: 50%;
+  height: 100%;
+}
+
+.answerdiv {
+  width: 50%;
+  height: 100%;
+}
+
+.inputdown{
+  display: flex;
+  height: 50%;
+  width: 100%
+}
+
+.inputup{
+  height: 50%;
+  width: 100%
+}
+
+.inputform{
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#inputinput {
+  margin: 0;
+  height: 50px;
+  width: 200px;
+  font-size: 30px;
+}
+
+#inputsub {
+  height: 55px;
+  width: 55px;
+}
+
+.calcul{
+  padding-top: 50px;
+  margin: 0;
+  font-family: 'Coolvetica';
+  font-size: 50px;
+  text-align: center;
+}
+
+.resetbut{
+  font-family: 'Coolvetica';
+  font-size: 30px;
+  margin-top: 10px;
+  width: 90%;
+  min-height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#0073ff;
+  border-radius:0px;
+  padding: 0;
+  border:none;
+  transition: 0.3s ease-out;
+}
+
+.resetbut:hover{
+  background-color:#00aeff;
+  cursor: pointer;
+}
+
+.vsavez{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Coolvetica';
+  font-size: 50px;
+}
+
+.win{
+  width: fit-content;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Coolvetica';
+  font-size: 70px;
+  color:#1BE700;
+  transition: 0.2 ease-out;
+}
+.win:hover{
+  font-size: 80px;
+  cursor: default;
+}
+
+
+.lose{
+  width: fit-content;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Coolvetica';
+  font-size: 70px;
+  color:#FF0000;
+  transition: 0.2s ease-out;
+}
+
+.lose:hover{
+  font-size: 80px;
+  cursor: default;
+}
